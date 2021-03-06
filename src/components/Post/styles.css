@@ -1,0 +1,121 @@
+.postContainer {
+	position: relative;
+	border: 1px solid #3d9bff;
+	width: 600px;
+	height: 100px;
+	padding: 10px;
+	margin: 10px auto;
+	background-color: white;
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+}
+
+.post {
+	display: flex;
+}
+.headlineCtn {
+	text-align: left;
+	margin-left: 20px;
+}
+.postHeadline {
+	font-size: 16px;
+}
+.date {
+	font-size: 10px;
+}
+.img {
+	margin-top: 10px;
+	width: 40px;
+	height: 40px;
+}
+
+.aboutNote {
+	padding: 10px;
+	font-family: "Poppins", sans-serif;
+}
+.name {
+	font-weight: 500;
+	font-size: 16px;
+}
+.date {
+	font-weight: 400;
+	font-size: 12px;
+}
+.btnContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+}
+.btn {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+.viewBtn {
+	width: 160px;
+	background-color: #3d9bff;
+	color: white;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+	padding: 5px 0;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.editBtn:hover {
+	background-color: #59ca65;
+}
+
+@media screen and (max-width: 500px) {
+	.note {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btnContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 10px;
+	}
+
+	.editBtn {
+		width: 100px;
+		margin: 10px 0;
+		background-color: #51af5b;
+		color: white;
+		text-decoration: none;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+		padding: 5px 0;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	.deleteBtn {
+		width: 100px;
+		margin: 10px 0;
+		background-color: #fff;
+		color: black;
+		text-decoration: none;
+		border: 2px solid #51af5b;
+		border-radius: 5px;
+		padding: 5px 0;
+		font-family: "Poppins", sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
